@@ -4,11 +4,11 @@ buildscript {
 
     ext {
         setup = [compileSdk: 26,
-                 buildTools: "26.0.0 rc2",
+                 buildTools: "26.0.1",
                  minSdk    : 16,
                  targetSdk : 26]
 
-        versions = [supportLib: "25.4.0", playServices: "11.0.4", objectBox: "0.9.13"]
+        versions = [supportLib: "26.0.1", playServices: "11.0.4", objectBox: "0.9.13"]
 
         travisBuild = System.getenv("TRAVIS") == "true"
         // allows for -Dpre-dex=false to be set
