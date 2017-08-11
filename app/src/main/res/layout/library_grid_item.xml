@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lgi_cardLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="8dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/lgi_rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/lgi_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lgi_image"
+            android:visibility="gone"
+            android:checked="false" />
+
+        <TextView
+            android:id="@+id/lgi_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+             android:layout_below="@+id/lgi_image"
+            android:layout_toRightOf="@+id/lgi_checkBox"
+            android:clickable="false"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/typography_subhead" />
+
+        <com.taskdesignsinc.android.myanimeviewer.view.SquareImageView
+            android:id="@+id/lgi_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:clickable="false"
+            android:contentDescription="Image"
+            android:padding="4dp"
+            android:scaleType="centerCrop"
+            android:transitionName="@string/transition_anime_cover" />
+
+        <View
+            android:id="@+id/lgi_badge_view_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lgi_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <View
+            android:id="@+id/lgi_badge_view_right"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lgi_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

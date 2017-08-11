@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">My Anime Viewer</string>
+    <string name="cast_app_id"></string>
+    <string name="parse_server"></string>
+    <string name="parse_app_id"></string>
+    <string name="mob_fox_id"></string>
+
+    <!-- ACRA Related -->
+    <string name="crash_toast_text">Ooooops! I crashed, but a report has been sent to my developer to help fix the issue!</string>
+    <string name="crash_dialog_title">My Anime Viewer has crashed</string>
+    <string name="crash_dialog_text">An unexpected error occurred forcing the application to stop. Please help us fix this by sending us error data, all you have to do is click OK.</string>
+    <string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+    <string name="crash_dialog_ok_toast">Thank you!</string>
+    <string name="crash_user_email_label">Email to contact</string>
+
+    <!-- Casting Related -->
+    <string name="check_your_network_connection">Can\'t load data. Check your network connection.</string>
+    <string name="cast">Cast</string>
+    <string name="info">Info</string>
+    <string name="connecting_to_receiver">Connecting to receiver ...</string>
+    <string name="cast_is_paused">Cast is paused</string>
+    <string name="cast_is_loading">Cast is loading ...</string>
+    <string name="media_route_menu_title">Play on&#8230;</string>
+    <string name="error">Error</string>
+
+    <!-- Sharing -->
+    <string name="share">Share</string>
+    <string name="share_this_video">Share this video with</string>
+    <string name="english">English</string>
+    <string name="network_error">Network connection unavailable</string>
+
+    <!-- Anime Header -->
+    <string name="episodes">Episodes</string>
+    <string name="source_md">Source:</string>
+    <string name="alternate_names">Alternate Name(s):</string>
+    <string name="genres">Genre(s):</string>
+    <string name="status">Status:</string>
+    <string name="authors">Author(s):</string>
+    <string name="summary">Summary:</string>
+
+    <!-- Layout Specific Strings -->
+    <string name="transition_anime_cover">transition_anime_cover</string>
+    <string name="image">Image</string>
+
+    <!-- Dialog Strings -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">Okay</string>
+    <string name="cancel">Cancel</string>
+    <string name="all">All</string>
+    <string name="select">Select</string>
+    <string name="clear">Clear</string>
+    <string name="remove_tag">Remove Tag</string>
+    <string name="remove_favorites">Remove Favorites</string>
+    <string name="confirmation_msg">Are you sure? This action cannot be undone!</string>
+    <string name="range_start">Range starts at</string>
+    <string name="range_end">Range ends at</string>
+
+    <!-- Menu Items -->
+    <string name="sort">Sort</string>
+    <string name="delete">Delete</string>
+    <string name="download">Download</string>
+    <string name="favorite">Favorite</string>
+    <string name="filter">Filter</string>
+    <string name="update">Update</string>
+    <string name="search_anime">Search Anime</string>
+    <string name="search_episodes">Search Episodes</string>
+    <string name="sort_episodes">Sort Episodes</string>
+    <string name="mark_viewed">Mark Viewed</string>
+    <string name="mark_unviewed">Mark Unviewed</string>
+    <string name="select_mode">Select Mode</string>
+    <string name="customize_tags">Customize Tags</string>
+    <string name="import_favorites">Import Favorites</string>
+    <string name="export_favorites">Export Favorites</string>
+    <string name="clear_all_favorites">Clear All Favorites</string>
+
+    <!-- Contextual Items -->
+    <string name="action_selected_one">selected</string>
+    <string name="action_selected_many">selected</string>
+
+    <!-- Notifications -->
+    <string name="updating">Updating</string>
+    <string name="downloads">Downloads</string>
+    <string name="episode">Episode</string>
+    <string name="anime">Anime</string>
+    <string name="search">Search</string>
+    <string name="rename">Rename</string>
+
+    <!-- Favorite Tags -->
+    <string-array name="favorite_tag_list">
+        <item>Finished</item>
+        <item>Plan to Watch</item>
+        <item>Currently Watching</item>
+        <item>Custom 1</item>
+        <item>Custom 2</item>
+    </string-array>
+
+    <string-array name="favorite_sort_list">
+        <item>A to Z</item>
+        <item>Z to A</item>
+        <item>Custom 2 to Finished Watching</item>
+        <item>Finished Watching to Custom 2</item>
+        <item>Recently Updated</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/alc_top_rl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/alc_cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rowListLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <com.taskdesignsinc.android.myanimeviewer.view.SquareImageView
+                android:id="@+id/alc_image"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/alc_checkbox"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:id="@+id/alc_text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/alc_image"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/alc_badge_view_right"
+                android:layout_toRightOf="@+id/alc_image"
+                android:layout_toStartOf="@+id/alc_badge_view_right"
+                android:layout_toEndOf="@+id/alc_image"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/alc_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/alc_text2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/alc_text3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/alc_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:visibility="invisible" />
+
+            <View
+                android:id="@+id/alc_badge_view_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/alc_image"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/alc_image" />
+
+            <View
+                android:id="@+id/alc_badge_view_right"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/alc_text_layout"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

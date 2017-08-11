@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/control_view_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="48dp"
+    android:background="@drawable/exo_playback_control_view_bg"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical">
+
+        <FrameLayout
+            android:id="@+id/exo_btns_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton android:id="@id/exo_play"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                style="?borderlessButtonStyle"
+                app:srcCompat="@drawable/ic_play"/>
+
+            <ImageButton android:id="@id/exo_pause"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                style="?borderlessButtonStyle"
+                app:srcCompat="@drawable/ic_pause"/>
+
+        </FrameLayout>
+
+        <ImageButton android:id="@+id/exo_replay"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            style="?borderlessButtonStyle"
+            app:srcCompat="@drawable/ic_replay"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/primary_text_light"/>
+
+        <SeekBar android:id="@id/exo_progress"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@id/exo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/primary_text_light"/>
+
+        <android.support.v7.app.MediaRouteButton
+            android:id="@+id/mrb"
+            android:visibility="invisible"
+            app:theme="@style/Widget.MediaRouter.Light.MediaRouteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

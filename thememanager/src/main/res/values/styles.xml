@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application theme. -->
+    <style name="DarkTheme" parent="MaterialDrawerTheme">
+        <item name="windowActionModeOverlay">true</item>
+        <!--
+        All customizations that are NOT specific to a particular API-level can go here.
+                <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        -->
+    </style>
+
+
+    <style name="LightTheme" parent="MaterialDrawerTheme.Light">
+        <item name="windowActionModeOverlay">true</item>
+        <!--
+       android:textColorPrimaryInverse is the  color of the title
+       text in the Toolbar, in the Theme.AppCompat.Light theme:
+        -->
+        <!-- <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item> -->'
+    </style>
+
+    <style name="BlueTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_blue_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_blue_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_blue_accent</item>
+    </style>
+
+    <style name="BlueGreyTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_blue_grey_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_blue_grey_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_blue_grey_accent</item>
+    </style>
+
+    <style name="BrownTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_brown_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_brown_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_brown_accent</item>
+    </style>
+
+    <style name="GreenTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_green_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_green_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_green_accent</item>
+    </style>
+
+    <style name="IndigoTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_indigo_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_indigo_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_indigo_accent</item>
+    </style>
+
+    <style name="RedTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_red_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_red_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_red_accent</item>
+    </style>
+
+    <style name="PinkTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_pink_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_pink_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_pink_accent</item>
+    </style>
+
+    <style name="PurpleTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_purple_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_purple_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_purple_accent</item>
+    </style>
+
+    <style name="DeepPurpleTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_deep_purple_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_deep_purple_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_deep_purple_accent</item>
+    </style>
+
+    <style name="LightBlueTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_light_blue_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_light_blue_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_light_blue_accent</item>
+    </style>
+
+    <style name="CyanTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_cyan_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_cyan_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_cyan_accent</item>
+    </style>
+
+    <style name="TealTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_teal_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_teal_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_teal_accent</item>
+    </style>
+
+    <style name="LightGreenTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_light_green_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_light_green_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_light_green_accent</item>
+    </style>
+
+    <style name="LimeTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_lime_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_lime_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_lime_accent</item>
+    </style>
+
+    <style name="YellowTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_yellow_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_yellow_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_yellow_accent</item>
+    </style>
+
+    <style name="AmberTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_amber_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_amber_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_amber_accent</item>
+    </style>
+
+    <style name="OrangeTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_orange_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_orange_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_orange_accent</item>
+    </style>
+
+    <style name="DeepOrangeTheme" parent="DarkTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_deep_orange_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_deep_orange_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_deep_orange_accent</item>
+    </style>
+
+    <style name="BlueThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_blue_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_blue_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_blue_accent</item>
+    </style>
+
+    <style name="BlueGreyThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_blue_grey_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_blue_grey_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_blue_grey_accent</item>
+    </style>
+
+    <style name="BrownThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_brown_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_brown_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_brown_accent</item>
+    </style>
+
+    <style name="GreenThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_green_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_green_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_green_accent</item>
+    </style>
+
+    <style name="IndigoThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_indigo_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_indigo_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_indigo_accent</item>
+    </style>
+
+    <style name="RedThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_red_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_red_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_red_accent</item>
+    </style>
+
+    <style name="PinkThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_pink_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_pink_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_pink_accent</item>
+    </style>
+
+    <style name="PurpleThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_purple_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_purple_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_purple_accent</item>
+    </style>
+
+    <style name="DeepPurpleThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_deep_purple_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_deep_purple_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_deep_purple_accent</item>
+    </style>
+
+    <style name="LightBlueThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_light_blue_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_light_blue_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_light_blue_accent</item>
+    </style>
+
+    <style name="CyanThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_cyan_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_cyan_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_cyan_accent</item>
+    </style>
+
+    <style name="TealThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_teal_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_teal_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_teal_accent</item>
+    </style>
+
+    <style name="LightGreenThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_light_green_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_light_green_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_light_green_accent</item>
+    </style>
+
+    <style name="LimeThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_lime_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_lime_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_lime_accent</item>
+    </style>
+
+    <style name="YellowThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_yellow_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_yellow_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_yellow_accent</item>
+    </style>
+
+    <style name="AmberThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_amber_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_amber_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_amber_accent</item>
+    </style>
+
+    <style name="OrangeThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_orange_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_orange_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_orange_accent</item>
+    </style>
+
+    <style name="DeepOrangeThemeL" parent="LightTheme">
+        <!-- Main theme colors -->
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/material_deep_orange_primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/material_deep_orange_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/material_deep_orange_accent</item>
+    </style>
+</resources>

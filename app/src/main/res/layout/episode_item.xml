@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ei_linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/ei_downloadedImage"
+        android:layout_toRightOf="@+id/ei_chk_box"
+        android:orientation="vertical"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/ei_titleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ei_subText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoLink="all"
+            android:padding="10dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/ei_chk_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ei_downloadedImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ei_menu"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:src="@drawable/ic_folder_open_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/ei_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="1dp"
+        android:visibility="invisible"
+        android:src="@drawable/ic_more_vert_grey600_24dp"
+        android:background="?attr/selectableItemBackground"/>
+
+</RelativeLayout>
