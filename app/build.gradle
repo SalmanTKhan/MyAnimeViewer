@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.objectbox'
+
+android {
+    compileSdkVersion setup.compileSdk
+    buildToolsVersion setup.buildTools
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        applicationId "com.taskdesignsinc.android.myanimeviewer"
+        minSdkVersion 16
+        targetSdkVersion setup.targetSdk
+        versionCode 1
+        versionName "0.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resValue "string", "anime_search_auth", applicationId + '.AnimeProvider'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
+            universalApk false
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "8g"
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    lintOptions { checkReleaseBuilds false }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation "com.android.support:appcompat-v7:${versions.supportLib}"
+    implementation "com.android.support:cardview-v7:${versions.supportLib}"
+    implementation "com.android.support:design:${versions.supportLib}"
+    testImplementation "junit:junit:4.12"
+    implementation "com.android.support.constraint:constraint-layout:1.0.2"
+
+    implementation "com.jakewharton:butterknife:8.7.0"
+    annotationProcessor "com.jakewharton:butterknife-compiler:8.7.0"
+
+    implementation "com.jakewharton.timber:timber:4.5.1"
+
+    debugImplementation "com.squareup.leakcanary:leakcanary-android-no-op:1.5"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:1.5"
+
+    implementation "com.android.support:multidex:1.0.2"
+
+    //Application Specific
+    implementation "com.android.support:mediarouter-v7:${versions.supportLib}"
+    implementation "com.google.android.gms:play-services-ads:${versions.playServices}"
+    implementation "com.google.android.gms:play-services-base:${versions.playServices}"
+    implementation "com.google.android.gms:play-services-cast-framework:${versions.playServices}"
+
+    implementation "org.jsoup:jsoup:1.10.3"
+    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
+    implementation 'com.koushikdutta.ion:ion:2.+'
+    implementation "com.google.code.gson:gson:2.8.1"
+
+    implementation "com.squareup.picasso:picasso:2.5.2"
+    implementation "com.github.bumptech.glide:glide:3.7.0"
+
+    implementation "com.google.android.exoplayer:exoplayer:r2.1.0"
+
+    implementation "io.objectbox:objectbox-android:${versions.objectBox}"
+    implementation 'io.objectbox:objectbox-rxjava:0.9.8-RC4'
+
+    implementation "com.simplecityapps:recyclerview-adapter:1.0.1"
+
+    implementation "com.karumi:dexter:4.1.0"
+
+    implementation 'com.afollestad.material-dialogs:core:0.9.4.5'
+    implementation 'com.github.deano2390:android-viewbadger:1.0.0'
+    implementation 'com.mikepenz:crossfader:1.5.0@aar'
+    implementation 'com.mikepenz:crossfadedrawerlayout:1.0.0@aar'
+    implementation 'com.mikepenz:fastadapter-commons:2.5.0@aar'
+    implementation 'com.mikepenz:itemanimators:0.5.0@aar'
+    implementation ('com.mikepenz:materialdrawer:5.9.1@aar') {
+        transitive = true
+    }
+
+    implementation 'co.infinum:mjolnirrecyclerview:2.1.1@aar'
+
+    // Backend
+    implementation 'com.parse:parse-android:1.15.7'
+    implementation 'com.parse:parse-livequery-android:1.0.3'
+    implementation 'com.parse:parseui-login-android:0.0.2'
+    implementation 'com.parse:parseui-widget-android:0.0.2'
+    implementation 'com.parse:parsetwitterutils-android:1.10.5'
+
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'ch.acra:acra:4.7.0'
+
+    implementation 'com.allattentionhere:fabulousfilter:0.0.3'
+    implementation ('com.google.android:flexbox:0.2.7'){
+        exclude group: 'com.android.support'
+    }
+
+    implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever:1.0.14'
+
+    implementation project(path: ':thememanager')
+    implementation project(path: ':recyclerview-fastscroll')
+    implementation project(path: ':croperino')
+}
