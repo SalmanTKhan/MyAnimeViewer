@@ -9,6 +9,10 @@ buildscript {
                  targetSdk : 26]
 
         versions = [supportLib: "25.4.0", playServices: "11.0.4", objectBox: "0.9.13"]
+
+        travisBuild = System.getenv("TRAVIS") == "true"
+        // allows for -Dpre-dex=false to be set
+        preDexEnabled = "true".equals(System.getProperty("pre-dex", "true"))
     }
     
     repositories {
