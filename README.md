@@ -2,7 +2,7 @@
 Free and open source anime viewer for Android
 
 <b>NOTE:</b><br/>
-This is the <i>early alpha build</i> of the application. It is still a WIP, because features like viewing and downloading work but it's still far from complete.
+This is the <i>early alpha build</i> of the android app. It is still a WIP, because features like viewing and downloading work but it's still far from complete.
 
 My Anime Viewer is an app that aims to make watching anime easier by taking the hassle of browsing to site and then being bombarded with ads.
 
