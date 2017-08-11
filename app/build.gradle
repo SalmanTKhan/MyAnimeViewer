@@ -42,7 +42,10 @@ android {
         sourceCompatibility 1.8
     }
 
-    lintOptions { checkReleaseBuilds false }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
 
     packagingOptions {
         pickFirst 'META-INF/services/javax.annotation.processing.Processor'
