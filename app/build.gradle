@@ -43,8 +43,10 @@ android {
     }
 
     lintOptions {
-        abortOnError false
+        quiet true
         checkReleaseBuilds false
+        // if true, stop the gradle build if errors are found
+        abortOnError false
     }
 
     packagingOptions {
