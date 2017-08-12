@@ -1,5 +1,4 @@
 language: android
-sudo: required
 jdk:
   - oraclejdk8
 android:
@@ -34,7 +33,7 @@ before_script:
   - adb shell input keyevent 82 &
 
 script:
-   - ./gradlew build connectedCheck
+   - "./gradlew clean build connectedCheck -PdisablePreDex --stacktrace"
    
 before_cache:
   - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
