@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'io.objectbox'
+apply plugin: 'jacoco-android'
 
 android {
     compileSdkVersion setup.compileSdk
@@ -32,7 +33,7 @@ android {
     }
 
     dexOptions {
-        javaMaxHeapSize "8g"
+        javaMaxHeapSize "4g"
         // Skip pre-dexing when running on Travis CI or when disabled via -Dpre-dex=false.
         preDexLibraries = preDexEnabled && !travisBuild
     }
