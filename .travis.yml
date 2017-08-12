@@ -1,16 +1,22 @@
 language: android
 jdk:
   - oraclejdk8
+env:
+  global:
+    - ANDROID_TARGET=android-16
+    - ANDROID_ABI=armeabi-v7a
 android:
-  components:    
+  components:
+    - tools
+    - platform-tools
     - build-tools-26.0.1
     - android-26
-    - android-24
+    - android-16
     - extra-google-google_play_services
     - extra-google-m2repository
     - extra-android-m2repository
     - extra-android-support
-    - sys-img-armeabi-v7a-android-24
+    - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
   licenses:
     - 'android-sdk-preview-license-.+'
     - 'android-sdk-license-.+'
@@ -23,13 +29,18 @@ before_install:
   - chmod +x gradlew
   
 before_script:
-  - echo no | android create avd --force -n test -t android-24 --abi armeabi-v7a
+  - ./gradlew build jacocoTestReport assembleAndroidTest
+  - echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI
   - emulator -avd test -no-skin -no-audio -no-window &
   - android-wait-for-emulator
+  - adb shell setprop dalvik.vm.dexopt-flags v=n,o=v
   - adb shell input keyevent 82 &
 
 script:
    - "./gradlew clean build connectedCheck -PdisablePreDex --stacktrace"
+   
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
    
 before_cache:
   - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
